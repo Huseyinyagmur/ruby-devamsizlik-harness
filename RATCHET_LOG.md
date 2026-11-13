@@ -11,3 +11,4 @@
 | 7 | Üçüncü (özgün) kural yoktu. | AGENTS.md #9; `test_telafi_1_de_false`, `test_telafi_2_de_true`, `test_telafi_3_te_false`, `test_telafi_aktif_olmayan_ogrenci_2_de_false`, `test_sonuclar_2_aktif` | Rehber + Sensör |
 | 8 | Test yazılmadı; iş mantığı `gets`/`puts` ile iç içeydi. | AGENTS.md #15, #20, #21; `test/ogrenci_test.rb`; `bin/kontrol` testleri koşar ve lib/'de `gets` arar; PostToolUse hook her kayıtta çalıştırır | Rehber + Sensör + Kanca |
 | 9 | Ruby sürümü belirtilmedi, `.ruby-version` yoktu. | `.ruby-version` = 3.4; AGENTS.md #1 | Rehber |
+| 10 | B koşusunda kanca Bash yazmasını kaçırdı: ajan `lib/` dosyalarını `cat > lib/...` heredoc ile yazdı, PostToolUse matcher'ı `Edit\|Write\|MultiEdit` olduğu için `bin/kontrol` tetiklenmedi (ajan #20 sayesinde kendisi çalıştırdı). | `.claude/settings.json` matcher'ı `Edit\|Write\|MultiEdit\|Bash`; AGENTS.md #22 (lib/ dosyalarını Bash heredoc ile değil, dosya düzenleme aracıyla yaz) | Kanca + Rehber |

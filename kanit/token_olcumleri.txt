@@ -1,0 +1,44 @@
+ÖLÇÜM ÇIKTISI (ruby token_say.rb, 13.11.2026)
+Not: Betik son 10 kaydı listeler. Ödevle ilgisiz c--Bitirme kaydı ve bu
+kanit/ klasörünü hazırlayan oturumun kaydı çıkarıldı; kalan üç blok aynen aşağıdadır.
+
+============================================================
+Proje klasörü : c--RubyOdev
+Tarih         : 12.11.2026 22:58
+Sizin mesajınız (kullanıcı turu): 1
+Ajan yanıtı (model çağrısı)     : 3
+Girdi token   : 6
+Çıktı token   : 2959
+Cache okuma   : 111356
+Cache yazma   : 17202
+TOPLAM        : 131523
+============================================================
+Proje klasörü : c--RubyOdevHarness
+Tarih         : 12.11.2026 23:08
+Sizin mesajınız (kullanıcı turu): 0
+Ajan yanıtı (model çağrısı)     : 10
+Girdi token   : 20
+Çıktı token   : 10675
+Cache okuma   : 466297
+Cache yazma   : 26046
+TOPLAM        : 503038
+============================================================
+Proje klasörü : c--RubyOdevHarness
+Tarih         : 13.11.2026 11:11
+Sizin mesajınız (kullanıcı turu): 1
+Ajan yanıtı (model çağrısı)     : 3
+Girdi token   : 6
+Çıktı token   : 2223
+Cache okuma   : 124785
+Cache yazma   : 19956
+TOPLAM        : 146970
+
+Eşleme: c--RubyOdev 22:58 = A koşusu; c--RubyOdevHarness 12.11 23:08 = harness kurulumu;
+c--RubyOdevHarness 13.11 11:11 = B koşusu.
+
+C:\Token\token_say.rb ile ölçüldü
+
+Not: Harness kurulumu bloğundaki "kullanıcı turu 0" değeri betiğin sınırlamasıdır.
+Bu oturum VS Code eklentisinde yapıldı; eklenti mesajın başına <ide_...> etiketiyle
+açık dosya bilgisini eklediği için betik mesajı sistem mesajı sanıp saymadı.
+Gerçekte 1 kullanıcı mesajı (harness kurulum promptu) gönderildi. Token sayıları etkilenmez.

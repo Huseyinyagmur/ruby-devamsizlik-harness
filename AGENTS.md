@@ -30,3 +30,4 @@
 ## Doğrulama
 20. Her değişiklikten sonra `ruby bin/kontrol` çalıştır.
 21. Çıktı `KONTROL YESIL` ve çıkış kodu 0 olmadan "bitti" deme.
+22. `lib/` dosyalarını Bash heredoc ile değil, dosya düzenleme aracıyla (Write/Edit) yaz.
