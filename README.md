@@ -88,6 +88,13 @@ dosyalarını `cat > lib/...` heredoc'uyla, yani Bash üzerinden yazdığı içi
 | Şartnameye uyum | 9 hata (RATCHET_LOG) | 27/27 test yeşil, KONTROL YESIL |
 | Harness kurulumu (tek seferlik) | — | 503.038 token |
 
+**A koşusunda kullanılan Ruby sözdizimi:** Sınıf yoktu; tek dosyalık prosedürel betik.
+Üst seviye `def` fonksiyonları (`tam_sayi_oku`, `durum`), anahtar kelime argümanları
+(`en_az:`, `en_cok:`), `loop do` + `$stdin.gets` ile girdi okuma, sonuçlar `Hash` dizisinde
+(`{ ad:, devamsiz:, oran:, durum: }`), float yüzde (`* 100.0 /`) ve üçlü operatörle
+`oran > DEVAMSIZLIK_SINIRI ? "KALDI" : "GEÇTİ"`. `method_missing` ve monkey patch kullanmadı.
+B koşusunda: iki sınıf, `define_method`, `attr_reader`, keyword `initialize`, tamsayı karşılaştırması.
+
 **Yorum:** Harness tur sayısını düşürmedi; iki koşu da 3 model çağrısında bitti. A'daki ajan hiç
 iterasyon yapmadan yanlış kodu tek seferde teslim etti (tam 3 devamsızlığı "geçti" saydı). B, %11,7
 daha fazla tokenla, aynı tur sayısında ve ilk seferde doğru sonuç verdi; çıktı tokenı %25 azaldı.
